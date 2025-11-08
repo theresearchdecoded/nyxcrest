@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NyxCrest Inc.</title>
+    <meta name="description" content="Get in touch with NyxCrest Inc. to learn how we can help make your community safer.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">NyxCrest</span>
+                    <span class="logo-tagline">Inc.</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html" class="btn-contact active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-label">Get in Touch</span>
+                <h1 class="page-title">Let's Build Safer Communities Together</h1>
+                <p class="page-subtitle">Whether you're a city official, law enforcement leader, or community advocate, we're here to discuss how NyxCrest can support your public safety goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-intro">Fill out the form below and one of our team members will get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization/City</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="role">Your Role *</label>
+                            <select id="role" name="role" required>
+                                <option value="">Select your role</option>
+                                <option value="mayor">Mayor/City Official</option>
+                                <option value="law-enforcement">Law Enforcement</option>
+                                <option value="government">Government Agency</option>
+                                <option value="community">Community Leader</option>
+                                <option value="business">Business/Private Sector</option>
+                                <option value="media">Media/Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">Area of Interest *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="citywatch">CityWatch Implementation</option>
+                                <option value="smartcity">SmartCity Platform</option>
+                                <option value="emergency">Emergency Response Hub</option>
+                                <option value="demo">Request a Demo</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="press">Press/Media Inquiry</option>
+                                <option value="careers">Career Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your community's needs and how we can help..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Subscribe to our newsletter for updates on community safety innovations</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        
+                        <p class="form-footer">* Required fields</p>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-message success-message" style="display: none;">
+                        <p><strong>Thank you for contacting us!</strong></p>
+                        <p>We've received your message and will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Headquarters</h4>
+                                <p>1250 Innovation Drive<br>
+                                Tech District, TC 94105<br>
+                                United States</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+1-555-0100">+1 (555) 010-0100</a><br>
+                                Monday - Friday: 8am - 6pm EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>General: <a href="mailto:info@nyxcrest.com">info@nyxcrest.com</a><br>
+                                Sales: <a href="mailto:sales@nyxcrest.com">sales@nyxcrest.com</a><br>
+                                Press: <a href="mailto:press@nyxcrest.com">press@nyxcrest.com</a><br>
+                                Support: <a href="mailto:support@nyxcrest.com">support@nyxcrest.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <h3>Office Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                        <p class="hours-note">* Emergency support available 24/7 for existing partners</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <h3>Quick Links</h3>
+                        <ul class="quick-links">
+                            <li><a href="solutions.html">Request a Demo</a></li>
+                            <li><a href="about.html">Download Media Kit</a></li>
+                            <li><a href="news.html">View Case Studies</a></li>
+                            <li><a href="#">Partnership Opportunities</a></li>
+                            <li><a href="#">Career Openings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Departments</span>
+                <h2 class="section-title">Specialized Teams Ready to Assist</h2>
+            </div>
+            
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="dept-icon">🤝</div>
+                    <h3>Partnership Development</h3>
+                    <p>Work with our team to explore how NyxCrest solutions can benefit your community.</p>
+                    <a href="mailto:partnerships@nyxcrest.com">partnerships@nyxcrest.com</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="dept-icon">💼</div>
+                    <h3>Sales & Solutions</h3>
+                    <p>Get detailed information about our products and request customized proposals.</p>
+                    <a href="mailto:sales@nyxcrest.com">sales@nyxcrest.com</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="dept-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                    <p>24/7 support for existing partners and technical inquiries.</p>
+                    <a href="mailto:support@nyxcrest.com">support@nyxcrest.com</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="dept-icon">📰</div>
+                    <h3>Media Relations</h3>
+                    <p>Press inquiries, interview requests, and media kit downloads.</p>
+                    <a href="mailto:press@nyxcrest.com">press@nyxcrest.com</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="dept-icon">👥</div>
+                    <h3>Community Engagement</h3>
+                    <p>Connect with our community relations team for local partnerships.</p>
+                    <a href="mailto:community@nyxcrest.com">community@nyxcrest.com</a>
+                </div>
+                
+                <div class="department-card">
+                    <div class="dept-icon">🎓</div>
+                    <h3>Careers</h3>
+                    <p>Explore opportunities to join our mission-driven team.</p>
+                    <a href="mailto:careers@nyxcrest.com">careers@nyxcrest.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Offices -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Locations</span>
+                <h2 class="section-title">Serving Communities Nationwide</h2>
+            </div>
+            
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3>West Coast Office</h3>
+                    <p>1250 Innovation Drive<br>
+                    Tech District, TC 94105</p>
+                    <p class="office-phone">+1 (555) 010-0100</p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>East Coast Office</h3>
+                    <p>500 Liberty Avenue<br>
+                    Metro Center, NY 10018</p>
+                    <p class="office-phone">+1 (555) 010-0200</p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>Midwest Office</h3>
+                    <p>825 Commerce Street<br>
+                    Business District, IL 60601</p>
+                    <p class="office-phone">+1 (555) 010-0300</p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>Southern Office</h3>
+                    <p>1200 Peachtree Way<br>
+                    Technology Park, GA 30303</p>
+                    <p class="office-phone">+1 (555) 010-0400</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How long does a typical implementation take?</h3>
+                    <p>Most CityWatch implementations are completed within 3-6 months, depending on the size of the deployment area and existing infrastructure. We work closely with your team to minimize disruption and ensure a smooth rollout.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What kind of training do you provide?</h3>
+                    <p>We provide comprehensive training for all system users, including law enforcement personnel, city officials, and technical staff. Training includes both on-site sessions and ongoing online support resources.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do you protect citizen privacy?</h3>
+                    <p>Privacy protection is built into every aspect of our systems. We use end-to-end encryption, strict access controls, comprehensive audit trails, and comply with all relevant privacy regulations including GDPR and local ordinances.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What kind of support do you offer after implementation?</h3>
+                    <p>All partners receive 24/7 technical support, regular system updates, performance monitoring, and quarterly reviews to ensure optimal operation and continuous improvement.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can the system integrate with our existing infrastructure?</h3>
+                    <p>Yes, NyxCrest solutions are designed to integrate seamlessly with most existing municipal systems, including CAD (Computer-Aided Dispatch), records management systems, and other public safety infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make Your Community Safer?</h2>
+                <p>Schedule a consultation with our team to discuss your specific needs.</p>
+                <a href="#contactForm" class="btn btn-white">Send a Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">NyxCrest</span>
+                        <span class="logo-tagline">Inc.</span>
+                    </div>
+                    <p class="footer-tagline">Safety Through Vigilance</p>
+                    <p class="footer-description">Building safer communities through innovative technology and predictive analytics.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="news.html">News & Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="solutions.html">CityWatch</a></li>
+                        <li><a href="solutions.html">SmartCity Platform</a></li>
+                        <li><a href="solutions.html">Emergency Response</a></li>
+                        <li><a href="solutions.html">Community First Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@nyxcrest.com">info@nyxcrest.com</a></li>
+                        <li><a href="tel:+1-555-0100">+1 (555) 010-0100</a></li>
+                        <li>1250 Innovation Drive<br>Tech District, TC 94105</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NyxCrest Inc. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Data Security</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
